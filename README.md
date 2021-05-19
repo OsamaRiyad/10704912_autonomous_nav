@@ -18,4 +18,16 @@ Simulation of a robot that is capable of autonomous navigation of a unknown map 
 * Copy libv_repExtRos.so which can be found in the lib subfolder of the devel folder of the turtlebot_simulation workspace in autonomous_navigation_wss to the main folder of CoppeliaSim.
 * Open a new terminal and start ROS by typing roscore.
 * Open a new terminal and type coppeliaSim to start coppeliaSim software.
-* 
+* Check in the terminal where you opened coppeliaSim if the ROS libraries have been successfully loaded (you should see: plugin 'ROSInterface':load succeeded)
+* In coppeliaSim open the turtlebot_maze_scenario.ttt which can be found in autonomous_navigation_wss/turtlebot_simulation/src/vrep_simulation/scenes
+* Play the simulation
+* Open a new terminal, ensure that you are in autonomous_navigation_wss and type the following command:
+  - source source_all.bash
+  - roslaunch turtlebot_gmapping turtlebot_gmapping.launch
+* Open a new terminal, ensure that you are in autonomous_navigation_wss and type the following command:
+  - source source_all.bash
+  - roslaunch turtlebot_rviz_launchers turtlebot_rviz.launch
+* Open a new terminal, ensure that you are in autonomous_navigation_wss and type the following command:
+  - source source_all.bash
+  - roslaunch turtlebot_navigation move_base.launch
+* Open the rviz software and click on "2D Nav Goal" button and click on the goal that you want the robot to navigate to.
