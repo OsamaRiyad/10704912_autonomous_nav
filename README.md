@@ -31,3 +31,7 @@ Simulation of a robot that is capable of autonomous navigation of a unknown map 
   - source source_all.bash
   - roslaunch turtlebot_navigation move_base.launch
 * Open the rviz software and click on "2D Nav Goal" button and click on the goal that you want the robot to navigate to.
+
+# Improvments
+* As for the next steps in this project, adding another robot to the environment and implementing a no-collision system between the two robots to allow autonomous navigation in a dynamic environment could be considered. 
+* Integration of a more complicated map and a robot with more sensors for greater spatial understanding of the map might be another addition.
